@@ -18,6 +18,7 @@ export class CreateProductComponent implements OnInit {
   ngOnInit() {
   }
 
+
   saveProduct() {
     this.productService.createProduct(this.product)
       .subscribe(data => console.log(data), error => console.log(error));
